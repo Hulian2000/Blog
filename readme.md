@@ -134,9 +134,8 @@ Heroku
 Celery
 Gravatar
 Contributing
-Git clone https://github.com/jakhax/pitches.git
 Make the changes.
 Write your tests on tests/
 If everything is OK. push your changes and make a pull request.
 License (MIT License)
-This project is licensed under the MIT Open Source license, (c) Jack ogina
+This project is licensed under the MIT Open Source license, (c) Hulian Juba
