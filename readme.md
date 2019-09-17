@@ -125,7 +125,7 @@ heroku heroku addons:create heroku-postgresql
 git push heroku master
 heroku run python2.7 manage.py db upgrade
 Live Demo
-The web app can be accessed from the following link https://pitch3es.herokuapp.com/
+The web app can be accessed from the following link 
 
 Technology used
 Python3.6
