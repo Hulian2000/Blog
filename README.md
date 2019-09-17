@@ -2,16 +2,15 @@
  Hulian Juba.
 
 ##Description:
-
 Pitches is a web application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
 
-User Requirements:
+##User Requirements:
 user should see the pitches other people have posted.
 user should vote on the pitch they liked and give it a downvote or upvote.
 user should comment on the different pitches and leave feedback.
 user should submit a pitch in any category.
 user should view the different categories.
-Features:
+##Features:
  Create and display pitches based on categories
  Create category for pitches
  Display trending pitches based on day, week, month, year.
