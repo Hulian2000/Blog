@@ -1,4 +1,5 @@
 
+@@ -0,0 +1,52 @@
 from celery import Celery
 from flask import Flask
 from flask_babel import Babel
