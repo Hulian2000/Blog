@@ -1,14 +1,28 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField,TextAreaField,SubmitField,SelectField
-from wtforms.validators import Required
-class PitchForm(FlaskForm):
-   title = StringField('Pitch title',validators=[Required()])
-   text = TextAreaField('Text',validators=[Required()])
-   category = SelectField('Type',choices=[('interview','Interview pitch'),('product','Product pitch'),('promotion','Promotion pitch')],validators=[Required()])
-   submit = SubmitField('Submit')
-class UpdateProfile(FlaskForm):
-   bio = TextAreaField('Bio.',validators = [Required()])
-   submit = SubmitField('Submit')
-class CommentForm(FlaskForm):
-   text = TextAreaField('Leave a comment:',validators=[Required()])
-   submit = SubmitField('Submit')
+from wtforms import StringField,PasswordField,BooleanField,SubmitField
+from wtforms.validators import Required,Email,EqualTo
+from ..models import User
+from wtforms import ValidationError
+
+
+class RegistrationForm(FlaskForm):
+    email = StringField('Your Email Address',validators=[Required(),Email()])
+    username = StringField('Enter your username',validators = [Required()])
+    password = PasswordField('Password',validators = [Required(), EqualTo('password_confirm',message = 'Passwords must match')])
+    password_confirm = PasswordField('Confirm Passwords',validators = [Required()])
+    submit = SubmitField('Sign Up')
+
+    # password and email verification
+    def validate_email(self,data_field):
+        if User.query.filter_by(email = data_field.data).first():
+            raise ValidationError("There's an account with that email")
+    
+    def validate_username(self,data_field):
+        if User.query.filter_by(username=data_field.data).first():
+            raise ValidationError("That user name is taken")
+
+class LoginForm(FlaskForm):
+    email = StringField('Your Email Address',validators=[Required(),Email()])
+    password = PasswordField('Password',validators=[Required()])
+    remember = BooleanField('remember me')
+    submit = SubmitField('Sign In')
