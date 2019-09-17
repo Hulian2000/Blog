@@ -23,7 +23,7 @@ Features
  User's messaging capability
  Show user's with the most pitches upvotes
  Multiple language support using flask-babel
-Specifications
+Specifications:
 Specifications file
 
 Quickstart
