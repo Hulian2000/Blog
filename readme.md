@@ -30,7 +30,7 @@ Requirements:
 This project was created on a debian linux platform but should work on other unix based[not limited to] sytems.
 
 Cloning the repository:
-git clone 
+git clone.
 Creating a virtual environment
 python2.7 -m virtualenv virtual-pitches
 source virtual-pitches/bin/activate
