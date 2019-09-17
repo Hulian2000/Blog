@@ -42,12 +42,12 @@ Prepare environmet variables
  export ADMIN_MAIL_USERNAME=ADMIN ACCOUNT EMAIL
  export DB_USER=forum_app
  export DATABASE_URL=POSTGRESQL DATABASE PATH WITH DRIVER
-Database migrations
+Database migrations.
 # first initialize the database if the migrations folder does not exist
-python manage.py db init
+python manage.py db init.
 # create  a migration
 python manage.py db migrate -m "initial migration"
-# upgrade
+# upgrade.
 python manage.py db upgrade
 # insert initial data
 python manage.py insert_initial_data
