@@ -1,17 +1,21 @@
-##Author:
+# Author
+
  Hulian Juba.
 
-##Description:
+## Description
+
 Pitches is a web application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
 
-##User Requirements:
+## User Requirements
+
 user should see the pitches other people have posted.
-user should vote on the pitch they liked and give it a downvote or upvote.
+user should vote  the pitch they liked and give it a downvote or upvote.
 user should comment on the different pitches and leave feedback.
 user should submit a pitch in any category.
 user should view the different categories.
-##Features:
- Create and display pitches based on categories
+Features
+
+Create and display pitches based on categories
  Create category for pitches
  Display trending pitches based on day, week, month, year.
  Display the latest pitches and comments.
@@ -43,11 +47,17 @@ Prepare environmet variables
  export DB_USER=forum_app
  export DATABASE_URL=POSTGRESQL DATABASE PATH WITH DRIVER
 Database migrations.
-# first initialize the database if the migrations folder does not exist
+
+#First initialize the database if the migrations folder does not exist
+
 python manage.py db init.
-# create  a migration
+
+create  a migration
+
+
 python manage.py db migrate -m "initial migration"
-# upgrade.
+#upgrade.
+
 python manage.py db upgrade
 # insert initial data
 python manage.py insert_initial_data
