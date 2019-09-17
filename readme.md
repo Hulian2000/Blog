@@ -1,15 +1,16 @@
 Author: Hulian Juba.
 
-Description
+Description:
+
 Pitches is a web application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
 
-User Requirements
+User Requirements:
 user should see the pitches other people have posted.
 user should vote on the pitch they liked and give it a downvote or upvote.
 user should comment on the different pitches and leave feedback.
 user should submit a pitch in any category.
 user should view the different categories.
-Features
+Features:
  Create and display pitches based on categories
  Create category for pitches
  Display trending pitches based on day, week, month, year.
@@ -26,7 +27,7 @@ Features
 Specifications:
 Specifications file
 
-Quickstart
+Quickstart:
 usage: manage.py [-?]
                  {shell,insert_fake_data,db,insert_initial_data,server,dbshell,test,runserver}
                  ...
@@ -46,13 +47,11 @@ positional arguments:
 optional arguments:
   -?, --help            show this help message and exit
 Setup
-Requirements
+Requirements:
 This project was created on a debian linux platform but should work on other unix based[not limited to] sytems.
 
-Tested on Debian Linux
-Python 2.7
-Cloning the repository
-git clone https://github.com/jakhax/pitches.git && cd pitches
+Cloning the repository:
+git clone 
 Creating a virtual environment
 python2.7 -m virtualenv virtual-pitches
 source virtual-pitches/bin/activate
@@ -73,7 +72,8 @@ python manage.py db migrate -m "initial migration"
 python manage.py db upgrade
 # insert initial data
 python manage.py insert_initial_data
-fake data for development
+Fake data for development:
+
 using Forgery_py library you can generate fake data and insert it to the database for testing the web app during development check out the example below for creating fake users
 
 def generate_fake_users(count=100):
@@ -94,10 +94,10 @@ def generate_fake_users(count=100):
             db.session.commit()
         except IntegrityError:
             db.session.rollback()
-Running Tests
+Running Tests:
 python manage.py test
 Running the server
-Development mode
+Development mode;
 The following are enabled in development mode
 
 class DevConfig(Config):
@@ -114,12 +114,11 @@ class ProdConfig(Config):
     DEBUG_TB_INTERCEPT_REDIRECTS = False
 make the following change to the config.py script '''python config=ProdConfig() '''
 
-Run server
+Run server:
 
 python manage.py runserver -h 0.0.0.0 -p 8000
-Deploying to heroku
+Deploying to heroku;
 Set the configuration to production mode
-
 heroku create appname
 heroku heroku addons:create heroku-postgresql
 git push heroku master
@@ -127,7 +126,8 @@ heroku run python2.7 manage.py db upgrade
 Live Demo
 The web app can be accessed from the following link 
 
-Technology used
+Technology used:
+
 Python3.6
 Flask
 Heroku
@@ -138,4 +138,4 @@ Make the changes.
 Write your tests on tests/
 If everything is OK. push your changes and make a pull request.
 License (MIT License)
-This project is licensed under the MIT Open Source license, (c) Hulian Juba
+This project is licensed under the MIT Open Source license,MTN.2019 (c) Hulian Juba.
