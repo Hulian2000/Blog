@@ -25,27 +25,6 @@ Features:
  Show user's with the most pitches upvotes
  Multiple language support using flask-babel
 Specifications:
-Specifications file
-
-Quickstart:
-usage: manage.py [-?]
-                 {shell,insert_fake_data,db,insert_initial_data,server,dbshell,test,runserver}
-                 ...
-
-positional arguments:
-  {shell,insert_fake_data,db,insert_initial_data,server,dbshell,test,runserver}
-    shell               Runs a Python shell inside Flask application context.
-    insert_fake_data    Adds fake data to database.
-    db                  Perform database migrations
-    insert_initial_data
-                        Adds initial data to database.
-    server              Runs the Flask development server i.e. app.run()
-    dbshell             Run DB shell.
-    test                Run the unit tests.
-    runserver           Runs the Flask development server i.e. app.run()
-
-optional arguments:
-  -?, --help            show this help message and exit
 Setup
 Requirements:
 This project was created on a debian linux platform but should work on other unix based[not limited to] sytems.
@@ -137,5 +116,6 @@ Contributing
 Make the changes.
 Write your tests on tests/
 If everything is OK. push your changes and make a pull request.
-License (MIT License)
-This project is licensed under the MIT Open Source license,MTN.2019 (c) Hulian Juba.
+
+License (MIT License):
+This project is licensed under the MIT Open Source license,MIT.2019 (c) Hulian Juba.
