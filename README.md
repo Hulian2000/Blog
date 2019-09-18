@@ -2,11 +2,11 @@
 
  Hulian Juba.
 
-## Description
+## Description.
 
 Pitches is a web application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
 
-## User Requirements
+## User Requirements.
 
 user should see the pitches other people have posted.
 user should vote  the pitch they liked and give it a downvote or upvote.
@@ -15,7 +15,7 @@ user should submit a pitch in any category.
 user should view the different categories.
 Features
 
-Create and display pitches based on categories
+##Create and display pitches based on categories
  Create category for pitches
  Display trending pitches based on day, week, month, year.
  Display the latest pitches and comments.
@@ -28,12 +28,12 @@ Create and display pitches based on categories
  User's messaging capability
  Show user's with the most pitches upvotes
  Multiple language support using flask-babel
-Specifications:
+##Specifications:
 Setup
 Requirements:
 This project was created on a debian linux platform but should work on other unix based[not limited to] sytems.
 
-Cloning the repository:
+##Cloning the repository:
 git clone.
 Creating a virtual environment
 python2.7 -m virtualenv virtual-pitches
@@ -48,7 +48,7 @@ Prepare environmet variables
  export DATABASE_URL=POSTGRESQL DATABASE PATH WITH DRIVER
 Database migrations.
 
-#First initialize the database if the migrations folder does not exist
+####First initialize the database if the migrations folder does not exist
 
 python manage.py db init.
 
@@ -70,14 +70,14 @@ def generate_fake_users(count=100):
     for i in range(count):
         user_name = forgery_py.internet.user_name(True)[:32]
         u = User(email=forgery_py.internet.email_address(),
-                 username=user_name,
-                 username_normalized=user_name.lower(),
-                 password=forgery_py.lorem_ipsum.word(),
-                 confirmed=True,
-                 name=forgery_py.name.full_name()[:64],
-                 homeland=forgery_py.address.city()[:64],
-                 about=forgery_py.lorem_ipsum.sentence(),
-                 created_at=forgery_py.date.date(True))
+                 -username=user_name,
+                 -username_normalized=user_name.lower(),
+                 -password=forgery_py.lorem_ipsum.word(),
+                 -confirmed=True,
+                 -name=forgery_py.name.full_name()[:64],
+                 -homeland=forgery_py.address.city()[:64],
+                 -about=forgery_py.lorem_ipsum.sentence(),
+                 -created_at=forgery_py.date.date(True))
         db.session.add(u)
         try:
             db.session.commit()
