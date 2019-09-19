@@ -5,11 +5,6 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://johnny:john@localhost/pitches'
 
 
-    @staticmethod
-    def init_app(app):
-        pass
-
-
 class ProdConfig(Config):
     pass
 
