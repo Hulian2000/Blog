@@ -1,0 +1,15 @@
+<h1 class="text-center">PITCH IT TO GROW!</h1>
+<div class="container">
+    <h1 class="text-center">Pitch my content</h1>
+    <div class="row">
+        <div class="col-md-4">
+            {% if current_user.is_authenticated %}
+           <a href="{{url_for('home.index')}}"><button class="btn btn-primary">View Pitch</button></a>
+            {%else%}
+            <p> It is like you don't have an account.
+                <a href="{{url_for('auth.login')}}">Sign in </a>hapa</p>
+            {%endif%}
+        </div>
+    </div>
+</div>
+{%endblock%}
