@@ -1,4 +1,4 @@
-#!/home/johnny/Documents/Pitches/virtual/bin/python
+#!/home/johnny/Documents/quotes/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

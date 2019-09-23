@@ -4,30 +4,30 @@
 
 ## Description
 
-Pitches is a web application that allows users to use that one minute wisely. The users will submit their one minute pitches and other users will vote on them and leave comments to give their feedback on them. The pitches are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
+quotes is a web application that allows users to use that one minute wisely. The users will submit their one minute quotes and other users will vote on them and leave comments to give their feedback on them. The quotes are organized by category. You can have different categories like pickup lines, interview pitch , product pitch, promotion pitch.
 
 ## User Requirements
 
-* user should see the pitches other people have posted.
+* user should see the quotes other people have posted.
 * user should vote  the pitch they liked and give it a downvote or upvote.
-* user should comment on the different pitches and leave feedback.
+* user should comment on the different quotes and leave feedback.
 * user should submit a pitch in any category.
 * user should view the different categories.
 * Features
 
-## Create and display pitches based on categories
+## Create and display quotes based on categories
 
- Create category for pitches
- Display trending pitches based on day, week, month, year.
- Display the latest pitches and comments.
+ Create category for quotes
+ Display trending quotes based on day, week, month, year.
+ Display the latest quotes and comments.
  Create user accounts with roles
  Send email verification to users with secret token that expires after sometime
  Send email to admin user when a new user signs up.
  Generate gravatars
  Editing user profiles
- Admin and moderator user with admin roles : create/delete/edit pitches topics, other users pitches and user's roles.
+ Admin and moderator user with admin roles : create/delete/edit quotes topics, other users quotes and user's roles.
  User's messaging capability
- Show user's with the most pitches upvotes
+ Show user's with the most quotes upvotes
  Multiple language support using flask-babel
 
 ## Specifications
@@ -40,8 +40,8 @@ This project was created on a debian linux platform but should work on other uni
 
 git clone.
 Creating a virtual environment
-python2.7 -m virtualenv virtual-pitches
-source virtual-pitches/bin/activate
+python2.7 -m virtualenv virtual-quotes
+source virtual-quotes/bin/activate
 Installing dependencies
 pip3 install -r requirements
 Prepare environmet variables
@@ -132,7 +132,7 @@ Make the changes.
 Write your tests on tests/
 If everything is OK. push your changes and make a pull request.
 Link.
-https://github.com/Hulian2000/Pitches.git
+https://github.com/Hulian2000/quotes.git
 License (MIT License):
 
 This project is licensed under the MIT Open Source license,MIT.2019 (c) Hulian Juba.
