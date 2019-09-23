@@ -13,7 +13,7 @@ class DevConfig(Config):
     DEBUG = True
 
 config_options = {
-'development':DevConfig,
+'inspire':DevConfig,
 'production':ProdConfig
 
 }

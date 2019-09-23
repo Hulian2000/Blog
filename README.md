@@ -65,9 +65,9 @@ python manage.py db upgrade
 ## Insert initial data
 
 python manage.py insert_initial_data
-Fake data for development:
+Fake data for inspire:
 
-using Forgery_py library you can generate fake data and insert it to the database for testing the web app during development check out the example below for creating fake users
+using Forgery_py library you can generate fake data and insert it to the database for testing the web app during inspire check out the example below for creating fake users
 
 def generate_fake_users(count=100):
     seed()
@@ -90,15 +90,15 @@ def generate_fake_users(count=100):
 Running Tests:
 python manage.py test
 Running the server
-Development mode;
-The following are enabled in development mode
+inspire mode;
+The following are enabled in inspire mode
 
 class DevConfig(Config):
     DEBUG = True
     TESTING = True
 Run server
 
-## starting server by defaut will run it in development mode
+## starting server by defaut will run it in inspire mode
 
 python manage.py server
 production mode
